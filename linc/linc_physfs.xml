@@ -1,13 +1,13 @@
 <xml>
 
-    <set name="NATIVE_TOOLKIT_PATH" value="${LINC_HAXEFS_PATH}/lib/" />
-    <include name="${LINC_HAXEFS_PATH}/lib/physfs/files.xml"/>
+    <set name="NATIVE_TOOLKIT_PATH" value="${LINC_PHYSFS_PATH}/lib/" />
+    <include name="${LINC_PHYSFS_PATH}/lib/physfs/files.xml"/>
 
     <files id='haxe'>
-        <compilerflag value='-I${LINC_HAXEFS_PATH}/linc/'/>
+        <compilerflag value='-I${LINC_PHYSFS_PATH}/linc/'/>
         <compilerflag value="-I${NATIVE_TOOLKIT_PATH}/physfs/"/>
 
-        <file name='${LINC_HAXEFS_PATH}/linc/haxefs.cpp' />
+        <file name='${LINC_PHYSFS_PATH}/linc/linc_physfs.cpp' />
     </files>
 
     <target id="haxe">

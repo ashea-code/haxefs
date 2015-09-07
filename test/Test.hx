@@ -4,12 +4,10 @@ class Test
 {
 	static function main()
 	{
-
 		trace('Init PhysFS');
 		HaxeFS.init();
 		test("../test.zip");
 		test("../dir");
-
 	}
 
 	static function test(mntPath:String)

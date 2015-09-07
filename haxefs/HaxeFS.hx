@@ -1,9 +1,9 @@
 package haxefs;
 
 @:keep
-@:include('haxefs.h')
+@:include('linc_physfs.h')
 @:build(linc.Linc.touch())
-@:build(linc.Linc.xml('haxefs'))
+@:build(linc.Linc.xml('physfs'))
 
 extern class HaxeFS 
 {

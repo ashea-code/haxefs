@@ -24,7 +24,7 @@
 * THE SOFTWARE.
 */
 
-#include "HaxeFS.h"
+#include "linc_physfs.h"
 
 namespace linc {
 
