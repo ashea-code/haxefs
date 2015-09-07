@@ -2,9 +2,6 @@ import haxefs.HaxeFS;
 
 class Test 
 {
-
-	private static var helloWorldBytes:Array<Int> = [72,101,108,108,111,32,87,111,114,108,100,33];
-
 	static function main()
 	{
 
@@ -32,5 +29,4 @@ class Test
 			throw "Could not unmount '" + mntPath + "'";
 		}
 	}
-
 }
