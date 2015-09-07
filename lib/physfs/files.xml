@@ -1,0 +1,58 @@
+<xml>
+
+    <files id="physfs">
+
+        <compilerflag value="-I${NATIVE_TOOLKIT_PATH}/physfs/"/>
+        <compilerflag value="-I${NATIVE_TOOLKIT_PATH}/physfs/zlib123"/>
+
+        <compilerflag value="-DPHYSFS_SUPPORTS_ZIP"/>
+        <compilerflag value="-DPHYSFS_SUPPORTS_7Z"/>
+
+        <!-- zlib -->
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/zlib123/adler32.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/zlib123/compress.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/zlib123/crc32.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/zlib123/deflate.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/zlib123/gzio.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/zlib123/infback.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/zlib123/inffast.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/zlib123/inflate.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/zlib123/inftrees.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/zlib123/trees.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/zlib123/uncompr.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/zlib123/zutil.c" />
+
+        <!-- LZMA -->
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/lzma/C/7zCrc.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/lzma/C/Archive/7z/7zBuffer.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/lzma/C/Archive/7z/7zDecode.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/lzma/C/Archive/7z/7zExtract.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/lzma/C/Archive/7z/7zHeader.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/lzma/C/Archive/7z/7zIn.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/lzma/C/Archive/7z/7zItem.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/lzma/C/Compress/Branch/BranchX86.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/lzma/C/Compress/Branch/BranchX86_2.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/lzma/C/Compress/Lzma/LzmaDecode.c" />
+
+        <!-- Physfs -->
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/physfs.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/physfs_byteorder.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/physfs_unicode.c" />
+
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/platform/os2.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/platform/unix.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/platform/macosx.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/platform/windows.c" />
+
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/archivers/dir.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/archivers/grp.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/archivers/hog.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/archivers/lzma.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/archivers/mvl.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/archivers/qpak.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/archivers/wad.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/archivers/zip.c" />
+
+    </files>
+
+</xml>

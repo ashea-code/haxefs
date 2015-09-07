@@ -1,0 +1,37 @@
+<xml>
+
+    <set name="NATIVE_TOOLKIT_PATH" value="${LINC_HAXEFS_PATH}/lib/" />
+    <include name="${LINC_HAXEFS_PATH}/lib/physfs/files.xml"/>
+
+    <files id='haxe'>
+        <compilerflag value='-I${LINC_HAXEFS_PATH}/linc/'/>
+        <compilerflag value="-I${NATIVE_TOOLKIT_PATH}/physfs/"/>
+
+        <file name='${LINC_HAXEFS_PATH}/linc/haxefs.cpp' />
+    </files>
+
+    <target id="haxe">
+
+        <!-- include sdl library code into the build -->
+        <files id="physfs"/>
+
+        <section if="windows">
+            <lib name="gdi32.lib" />
+            <lib name="opengl32.lib" />
+            <lib name="user32.lib" />
+            <lib name="kernel32.lib" />
+            <lib name="advapi32.lib" />
+            <lib name="winmm.lib" />
+            <lib name="imm32.lib"  />
+            <lib name="ole32.lib" />
+            <lib name="oleaut32.lib" />
+            <lib name="version.lib" />
+            <lib name="ws2_32.lib"  />
+            <lib name="wldap32.lib" />
+            <lib name="shell32.lib" />
+            <lib name="comdlg32.lib" />
+        </section>
+
+    </target>
+
+</xml>
