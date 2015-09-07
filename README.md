@@ -14,7 +14,7 @@ Really. This is not in a state I would call "stable", "safe", or "good."
 
 Please make pull requests and improve my messy code! Most of this project is being done during my spare time at college, so I don't have all the time I would like to clean things up.
 
-If you want to test this out: `haxelib git linc_stb https://github.com/snowkit/linc_stb.git`
+If you want to test this out: `haxelib git haxefs https://github.com/AaronShea/haxefs.git`
 
 ### What's PhysicsFS?
 
