@@ -5,7 +5,7 @@
 # pick a target
 
 #-D mac
--D windows
+#-D windows
 #-D linux
 #-D ios
 #-D android
@@ -14,7 +14,7 @@
 #(if not using the default for your platform):
 
 #-D HXCPP_M64
--D HXCPP_M32
+#-D HXCPP_M32
 
 # For android/ios you have these and more:
 #-D HXCPP_ARMV7
