@@ -79,9 +79,24 @@ namespace linc {
 		extern bool fsexist(::String path);
 
 		/**
+		* Check if a specific path is a directory
+		*/
+		extern bool fsisdir(::String path);
+
+		/**
 		* Gets the byte content from a file
 		*/
 		extern ::Array<Int> fsread(::String path);
+
+		/*
+		* Sets the write directory of PhysFS
+		*/
+		extern bool fssetwrite(::String path);
+
+		/**
+		* Returns the current write directory
+		*/
+		extern ::String fsgetwrite();
 
 		/*
 		* Debug - Lists files in virtual path

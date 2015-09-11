@@ -28,6 +28,13 @@ class Test
 			throw "File should exist: '" + mntPath + "'";
 		}
 
+		trace("Test file is directory");
+		trace(HaxeFS.isdir('/test/file'));
+		if(HaxeFS.isdir('/test/file'))
+		{
+			throw "File should not be a directory";
+		}
+
 		trace("Test Read bytes from 'file'");
 		trace(HaxeFS.read('/test/file'));
 

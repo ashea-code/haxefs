@@ -26,12 +26,12 @@ extern class HaxeFS
 	@:native("linc::haxefs::fsexist")
 	public static function exist(filePath:String):Bool;
 
+	@:native("linc::haxefs::fsisdir")
+	public static function isdir(filePath:String):Bool;
+
 	@:native("linc::haxefs::fsread")
 	public static function read(filePath:String):Array<Int>;
-
-	@:native("linc::haxefs::ls")
-	public static function ls(filePath:String):Void;
-
+	
 	@:native("linc::haxefs::fsgeterr")
 	public static function geterr():String;
 

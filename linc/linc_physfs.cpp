@@ -67,7 +67,7 @@ namespace linc {
 		}
 
 		/*
-		* Unmount the directory or archive from the virtual filesystem
+		* Unmount the directory or archive from the virtual file system
 		* path - the virtual path to unmount
 		*/
 		bool fsumnt(::String path)
@@ -103,11 +103,24 @@ namespace linc {
 		}
 
 		/**
-		* Check to see if this file exists in the mounted filesystem
+		* Check to see if this file exists in the mounted file system
 		*/
 		bool fsexist(::String path)
 		{
 			if (PHYSFS_exists(path.__CStr()))
+			{
+				return true;
+			}
+
+			return false;
+		}
+
+		/**
+		* Check if a specific path is a directory
+		*/
+		bool fsisdir(::String path)
+		{
+			if(PHYSFS_isDirectory(path.__CStr()))
 			{
 				return true;
 			}
@@ -143,6 +156,27 @@ namespace linc {
 			}
 
 			return NULL;
+		}
+
+		/*
+		* Sets the write directory of PhysFS
+		*/
+		bool fssetwrite(::String path)
+		{
+			if(!PHYSFS_setWriteDir(path.__CStr()))
+			{
+				return false;
+			}
+
+			return true;
+		}
+
+		/**
+		* Returns the current write directory
+		*/
+		::String fsgetwrite()
+		{
+			return ::String(PHYSFS_getWriteDir());
 		}
 
 		/*
