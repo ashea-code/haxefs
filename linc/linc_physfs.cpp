@@ -85,9 +85,9 @@ namespace linc {
 		/*
 		* Returns string array of files in the virtual path specified
 		*/
-		::Array<::String> fslist(::String path)
+		::Array< ::String> fslist(::String path)
 		{
-			::Array<::String> retArray = Array_obj<::String>::__new();
+			::Array< ::String> retArray = Array_obj< ::String>::__new();
 
 			char **rc;
 			rc = PHYSFS_enumerateFiles(path.__CStr());
@@ -131,7 +131,7 @@ namespace linc {
 		/**
 		* Gets the text content from a file
 		*/
-		::Array<::Int> fsread(::String path)
+		::Array< ::Int> fsread(::String path)
 		{
 			if (PHYSFS_exists(path.__CStr()))
 			{
@@ -142,7 +142,7 @@ namespace linc {
 				buf = new char[PHYSFS_fileLength(f)];
 				int length_read = PHYSFS_read(f, buf, 1, PHYSFS_fileLength(f));
 
-				::Array<::Int> dataArr = Array_obj<::Int>::__new(length_read);
+				::Array< ::Int> dataArr = Array_obj< ::Int>::__new(length_read);
 				for (int i = 0; i < length_read; i++)
 				{
 					dataArr->__SetItem(i, ::Int(buf[i]));

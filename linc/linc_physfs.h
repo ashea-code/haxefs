@@ -71,7 +71,7 @@ namespace linc {
 		/*
 		* Returns string array of files in the virtual path specified
 		*/
-		extern ::Array<::String> fslist(::String path);
+		extern ::Array< ::String> fslist(::String path);
 
 		/**
 		* Check to see if this file exists in the mounted filesystem
