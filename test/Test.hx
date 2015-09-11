@@ -12,10 +12,20 @@ class Test
 
 	static function test(mntPath:String)
 	{
+
+		trace(" ----- Testing using path: " + mntPath);
+
 		trace("Test mount - " + mntPath);
 		if(!HaxeFS.mnt(mntPath, "test", true))
 		{
 			throw "Could not mount '" + mntPath + "'";
+		}
+
+		trace("Test File Exists");
+		trace(HaxeFS.exist('/test/file'));
+		if(!HaxeFS.exist('/test/file'))
+		{
+			throw "File should exist: '" + mntPath + "'";
 		}
 
 		trace("Test Read bytes from 'file'");
