@@ -32,4 +32,7 @@ extern class HaxeFS
 	@:native("linc::haxefs::ls")
 	public static function ls(filePath:String):Void;
 
+	@:native("linc::haxefs::fsgeterr")
+	public static function geterr():String;
+
 }
