@@ -6,7 +6,8 @@
         <compilerflag value="-I${NATIVE_TOOLKIT_PATH}/physfs/zlib123"/>
 
         <compilerflag value="-DPHYSFS_SUPPORTS_ZIP"/>
-        <compilerflag value="-DPHYSFS_SUPPORTS_7Z"/>
+        <compilerflag value="-DPHYSFS_SUPPORTS_7Z"/> 
+        <compilerflag value="-DPHYSFS_NO_CDROM_SUPPORT"/>
 
         <!-- zlib -->
         <file name="${NATIVE_TOOLKIT_PATH}/physfs/zlib123/adler32.c" />
@@ -41,6 +42,7 @@
 
         <file name="${NATIVE_TOOLKIT_PATH}/physfs/platform/os2.c" />
         <file name="${NATIVE_TOOLKIT_PATH}/physfs/platform/unix.c" />
+        <file name="${NATIVE_TOOLKIT_PATH}/physfs/platform/posix.c" />
         <file name="${NATIVE_TOOLKIT_PATH}/physfs/platform/macosx.c" />
         <file name="${NATIVE_TOOLKIT_PATH}/physfs/platform/windows.c" />
 
